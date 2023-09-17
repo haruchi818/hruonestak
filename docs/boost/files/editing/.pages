@@ -1,0 +1,10 @@
+title: Editing with an editor
+nav:
+  - README.md
+  - nano.md
+  - ed-ex.md
+  - vi.md
+  - nvi.md
+  - vim.md
+  - nvim.md
+  - ...
