@@ -1,4 +1,4 @@
-#!/home/hru/Desktop/Projects/skilstak/.env/bin/python
+#!/home/hru/Desktop/Projects/hruonestak/.env/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

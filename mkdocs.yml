@@ -1,4 +1,4 @@
-site_name: SKILSTAK.IO
+site_name: hru.one
 site_url: https://hru.one
 repo_url: https://github.com/haruchi818/hruonestak
 edit_uri: blob/main/docs/
@@ -59,16 +59,19 @@ theme:
     text: Work Sans
 
 
+
   palette:
 
     # Palette toggle for light mode
     - scheme: default
+      primary: black
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - scheme: slate
+      primary: white
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
