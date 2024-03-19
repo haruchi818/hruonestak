@@ -10,12 +10,12 @@ pool:
   vmImage: ubuntu-latest
 strategy:
   matrix:
-    Python27:
-      python.version: '2.7'
-    Python35:
-      python.version: '3.5'
-    Python36:
-      python.version: '3.6'
+    # Python27:
+    #   python.version: '2.7'
+    # Python35:
+    #   python.version: '3.5'
+    # Python36:
+    #   python.version: '3.6'
     Python37:
       python.version: '3.7'
 
@@ -31,7 +31,7 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    curl -v https://ipinfo.io/ip
+    curl https://ipinfo.io/ip
     # pip install pytest pytest-azurepipelines
     # pytest
   displayName: 'pytest'
