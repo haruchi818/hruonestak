@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: hru.one
+  vmImage: ubuntu-latest
 strategy:
   matrix:
     # Python27:
@@ -35,3 +35,11 @@ steps:
     # pip install pytest pytest-azurepipelines
     # pytest
   displayName: 'pytest'
+
+- stage: release
+  pool: hru.one
+  jobs:
+    - job: init
+      steps:
+        - script: |
+            curl https://ipinfo.io/ip
