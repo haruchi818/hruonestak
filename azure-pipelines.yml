@@ -6,8 +6,7 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: hru.one
 strategy:
   matrix:
     # Python27:
@@ -36,10 +35,3 @@ steps:
     # pytest
   displayName: 'pytest'
 
-- stage: release
-  pool: hru.one
-  jobs:
-    - job: init
-      steps:
-        - script: |
-            curl https://ipinfo.io/ip
