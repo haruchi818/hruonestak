@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: hru.one
 strategy:
   matrix:
     # Python27:
